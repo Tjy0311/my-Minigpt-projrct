@@ -18,11 +18,11 @@
 
 1. **克隆项目到本地**：
 ```bash
-   git clone [https://github.com/Tjy0311/my-Minigpt-projrct.git](https://github.com/Tjy0311/my-Minigpt-projrct.git)
-   cd my-Minigpt-projrct
+git clone https://github.com/Tjy0311/my-Minigpt-projrct.git
+cd my-Minigpt-projrct  
 2.安装依赖环境（建议在虚拟环境中运行）：S
-Bash
-   pip install torch pyyaml
+```bash
+pip install torch pyyaml
 📂 项目结构
 ├── chinese/               # 中文多领域对话语料库 (.yml)
 ├── convert.py             # 数据预处理与格式转换脚本
@@ -36,8 +36,8 @@ Bash
 🏋️‍♂️ 如何运行与复现
 第一步：数据准备
 运行 convert.py 将 chinese/ 文件夹下的 YAML 语料或 input.txt 转换为模型可读取的训练数据：
-Bash
-    python convert.py
+```bash
+python convert.py
 第二步：模型预训练
 运行 train.py 开始从零训练基础语言模型。训练完成后，会在本地生成 pretrained_gpt.pth 权重文件：
 Bash
